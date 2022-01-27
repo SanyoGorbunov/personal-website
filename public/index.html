@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oleksandr Horbunov's Personal Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link href="%PUBLIC_URL%/css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="%PUBLIC_URL%/fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="%PUBLIC_URL%/css/templatemo-diagoona.css" rel="stylesheet" />
+
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Oleksandr Horbunov's Personal Website"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -15,29 +21,80 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="tm-container">
+      <div>
+          <div class="tm-row pt-4">
+              <div class="tm-col-left">
+                  <div class="tm-site-header media">
+                      <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i>
+                      <div class="media-body">
+                          <h1 class="tm-sitename text-uppercase">diagoona</h1>
+                          <p class="tm-slogon">new bootstrap template</p>
+                      </div>        
+                  </div>
+              </div>
+              <div class="tm-col-right">
+                  <nav class="navbar navbar-expand-lg" id="tm-main-nav">
+                      <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
+                          data-toggle="collapse" data-target="#navbar-nav" 
+                          aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span><i class="fas fa-bars"></i></span>
+                      </button>
+                      <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                          <ul class="navbar-nav text-uppercase">
+                              <li class="nav-item">
+                                  <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link tm-nav-link" href="about.html">About</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link tm-nav-link" href="services.html">Services</a>
+                              </li>                            
+                              <li class="nav-item active">
+                                  <a class="nav-link tm-nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                              </li>
+                          </ul>                            
+                      </div>                        
+                  </nav>
+              </div>
+          </div>
+          
+          <div class="tm-row">
+              <div class="tm-col-left"></div>
+              <main class="tm-col-right tm-contact-main" id="root"></main>>
+          </div>
+      </div>        
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <div class="tm-row">
+          <div class="tm-col-left text-center">            
+              <ul class="tm-bg-controls-wrapper">
+                  <li class="tm-bg-control active" data-id="0"></li>
+                  <li class="tm-bg-control" data-id="1"></li>
+                  <li class="tm-bg-control" data-id="2"></li>
+              </ul>            
+          </div>        
+          <div class="tm-col-right tm-col-footer">
+              <footer class="tm-site-footer text-right">
+                  <p class="mb-0">Copyright 2020 Diagoona Co. 
+                  
+                  | Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-text-link">TemplateMo</a></p>
+              </footer>
+          </div>  
+      </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div class="tm-bg"> <!-- Diagonal background design -->
+          <div class="tm-bg-left"></div>
+          <div class="tm-bg-right"></div>
+      </div>
+    </div>
+
+    <script src="%PUBLIC_URL%/js/jquery-3.4.1.min.js"></script>
+    <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery.backstretch.min.js"></script>
+    <script src="%PUBLIC_URL%/js/templatemo-script.js"></script>
   </body>
 </html>

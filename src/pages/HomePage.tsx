@@ -1,24 +1,11 @@
-import logo from '../logo.svg';
 import '../App.css';
 
 function HomePage() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/HomePage.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className={"tm-content tm-contact"}>
+        <h2 className={"mb-4 tm-content-title"}>Contact Us</h2>
+        <p className={"mb-85"}>Etiam et egestas arcu. Fusce congue quis elit vitae commodo. Cras neque mauris, vehicula in ipsum sit amet, faucibus aliquam arcu.</p>
+    </section>
   );
 }
 
