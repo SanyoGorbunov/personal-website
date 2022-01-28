@@ -1,15 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import AboutPage from './pages/AboutPage';
 import NotFound from './pages/NotFound';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import NumbersPage from './pages/NumbersPage';
+import { navigationRoutes } from './routes';
 
 function App() {
-  const links = [
-    { label: 'About me', href: '/', page: AboutPage },
-    { label: 'Numbers', href: '/numbers', page: NumbersPage },
-    { label: 'Privacy Policy', href: '/privacy-policy', page: PrivacyPolicy },
-  ];
 
   return (
     <BrowserRouter>
@@ -31,9 +24,9 @@ function App() {
                 </button>
                 <div className={"collapse navbar-collapse tm-nav"} id="navbar-nav">
                   <ul className={"navbar-nav text-uppercase"}>
-                    { links.map(link => (
+                    { navigationRoutes.map(route => (
                         <li className={"nav-item"}>
-                            <Link className={"nav-link tm-nav-link"} to={link.href}>{link.label}</Link>
+                            <Link className={"nav-link tm-nav-link"} to={route.href}>{route.label}</Link>
                         </li>                
                     )) }
                 </ul>
@@ -46,8 +39,8 @@ function App() {
           <div className={"tm-col-left"}></div>
           <main className={"tm-col-right tm-contact-main"} id="root">
             <Routes>
-              { links.map(link => (
-                <Route path={link.href} element={<link.page/>} />
+              { navigationRoutes.map(route => (
+                <Route path={route.href} element={<route.page/>} />
               )) }
               <Route path="*" element={<NotFound/>} />
             </Routes>
