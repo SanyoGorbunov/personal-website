@@ -1,25 +1,10 @@
-import logo from '../logo.svg';
-import '../App.css';
-
 function PrivacyPolicy() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/PrivacyPolicy.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section className={"tm-content"}>
+        <h2 className={"mb-5 tm-content-title"}>Privacy Policy</h2>
+        <p className={"mb-5"}>This is Privacy Policy page</p>
+    </section>
+);
 }
 
 export default PrivacyPolicy;
